@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    font-size: 62.5%;
+    font-family: 'Public Sans', sans-serif;
+}
+:root{
+    --background-box : black;
+    --main-background : rgb(175, 230, 92);
+    --background-boton :rgb(175, 230, 92);
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--main-background);
+}
+
+
+
+canvas {
+    border: 4px solid #ff6600;
+    border-radius: 4px;
+    background-color: #feff9d;
+    padding: 0px;
+    margin: 0px;
+  }
+
+#botones{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.boton{
+    font-size: 1.5rem;
+    font-family: inherit;
+    width: 90px;
+    height: 25px;
+    background: black;
+
+    color: var(--background-boton);
+    border-radius: 5px;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 350px;
+}
+span{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-size: 2.5rem;
+    align-items: center;
+}
+.informacion{
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+

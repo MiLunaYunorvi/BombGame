@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+
+        <canvas  id="game">
+
+        </canvas>
+
+        
+        <section id="botones">
+            <button id="arriba" class="boton">Arriba</button>
+            <button id="izquierda" class="boton">Izquierda</button>
+            <button id="derecha" class="boton">Derecha</button>
+            <button id="abajo" class="boton">Abajo</button>
+        </section>
+
+        <section id="info">
+            <span>
+                <p class="informacion"  >Vidas</p>
+                <p id="vidas"> </p>
+            </span>
+            <span>
+                <p class="informacion">Tiempo</p>
+                <p id="tiempo"> </p>
+            </span>
+            <span>
+                <p class="informacion">Record</p>
+                <p id="record"> </p>
+            </span>
+        </section>
+
+        <script src="./game.js" ></script>
+        <script src="./maps.js" ></script>
+    </main>
+
+</body>
+</html>
