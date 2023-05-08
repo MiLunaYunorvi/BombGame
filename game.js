@@ -3,7 +3,7 @@ var game = canvas.getContext('2d');
 const buttonUp = document.querySelector("#arriba")
 const buttonDown = document.querySelector("#abajo")
 const buttonR = document.querySelector("#derecha")
-const buttonL = document.querySelector("#izquieda")
+const buttonL = document.querySelector("#izquierda")
 const vida = document.querySelector("#vidas")
 var segundos = document.querySelector("#tiempo")
 var record = document.querySelector("#record")
@@ -157,7 +157,12 @@ function clearCanvas(){
 
 window.addEventListener('load', startGame);
 window.addEventListener('resize', setSizing);
-window.addEventListener('keydown',moveByKeys)
+window.addEventListener('keydown',moveByKeys);
+buttonUp.addEventListener('click',moveUp);
+buttonDown.addEventListener('click',moveDown);
+buttonL.addEventListener('click',moveLeft);
+buttonR.addEventListener('click',moveRight);
+
 
 
 function moveByKeys(event){
